@@ -3,11 +3,6 @@ import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc } 
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 
 // Firebase Console'dan alacağımız config
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAaS4lIJE05GanvTrBBXVp4qtyCDrmNWpM",
@@ -22,7 +17,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Firebase initialize
-const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
 
