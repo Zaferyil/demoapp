@@ -3,14 +3,23 @@ import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc } 
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 
 // Firebase Console'dan alacağımız config
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "your-api-key-here",
-  authDomain: "your-project.firebaseapp.com", 
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "your-app-id"
+  apiKey: "AIzaSyAaS4lIJE05GanvTrBBXVp4qtyCDrmNWpM",
+  authDomain: "bringolino-cd14c.firebaseapp.com",
+  projectId: "bringolino-cd14c",
+  storageBucket: "bringolino-cd14c.firebasestorage.app",
+  messagingSenderId: "3410277143",
+  appId: "1:3410277143:web:9d589af46d2ca8cdfa3d52"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 // Firebase initialize
 const app = initializeApp(firebaseConfig);
